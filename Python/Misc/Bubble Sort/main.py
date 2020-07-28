@@ -1,3 +1,6 @@
+import random
+
+
 # Bubble sort array
 def bubbleSort(A):
     # get array length
@@ -22,6 +25,7 @@ def bubbleSort(A):
 
 if __name__ == '__main__':
     # Define unsorted array and print
-    A = [5, 10, 1, 3, 9, 2, 3, 5, 6, 23, 4]
+    N = 100000
+    A = random.sample(range(-2147483647, 2147483647), N)
     print("Unsorted Array: ", A)
     print("Sorted Array: ", bubbleSort(A))
